@@ -138,7 +138,7 @@ public class Player : Mover
         maxRagepoint = 10;
         hitpoints = 10;
         ragepoints = 0;
-        movementSpeed = 200;
+        movementSpeed = 175;
         isAlive = true;
         lastImmune = Time.time;
         lastRageGain = Time.time;

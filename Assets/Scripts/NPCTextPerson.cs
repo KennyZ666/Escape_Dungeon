@@ -5,19 +5,35 @@ using UnityEngine;
 public class NPCTextPerson : Collidable
 {
     public string message;
+    public Dialogue dialogue;
 
-    private float cooldown = 4.0f;
-    private float lastShout = -4.0f;
+    private float cooldown = 40.0f;
+    private float lastShout = -40.0f;
+    private bool NotCollided;
+
+    protected override void Start()
+    {
+        base.Start();
+        NotCollided = GameManager.instance.IsDialogueTriggered;
+    }
 
     protected override void Oncollide(Collider2D coll)
     {
-        //Debug.Log(coll.name);
-        
-        if (Time.time - lastShout > cooldown)
+        if (!NotCollided && Time.time - lastShout > cooldown)
         {
+            //Debug.Log(coll.name);
             lastShout = Time.time;
-            GameManager.instance.ShowText(message, 25, Color.white, transform.position + new Vector3(0, 0.16f, 0), Vector3.zero, cooldown);
+            NotCollided = true;
+            GameManager.instance.IsDialogueTriggered = true;
+            GameManager.instance.dialogueTrigger.TriggerDialogue();
+            //if (Time.time - lastShout > cooldown)
+            //{
+            //    lastShout = Time.time;
+            //    GameManager.instance.ShowText(message, 25, Color.white, transform.position + new Vector3(0, 0.16f, 0), Vector3.zero, cooldown);
+            //}
         }
+
+
 
     }
 }

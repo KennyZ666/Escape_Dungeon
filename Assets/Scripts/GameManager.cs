@@ -41,7 +41,11 @@ public class GameManager : MonoBehaviour
     //public List<AnimatorController> animatorControllers;
 
     //References
+    //public DialogueManager dialogueManager;
+    public DialogueTrigger dialogueTrigger;
     public Player player;
+    public bool IsDialogueTriggered;
+    //public NPCTextPerson NPC;
 
     public Weapon weapon;
     public Armor armor;
@@ -157,10 +161,14 @@ public class GameManager : MonoBehaviour
     {
         int currLevel = GetCurrentLevel();
         experience += xp;
-        if (currLevel < GetCurrentLevel())
+        for (int i = currLevel; i < GetCurrentLevel(); i++)
         {
             OnLevelUp();
         }
+        //if (currLevel < GetCurrentLevel())
+        //{
+        //    OnLevelUp();
+        //}
     }
     public void OnLevelUp()
     {
@@ -255,7 +263,7 @@ public class GameManager : MonoBehaviour
         string s = "";
 
         s += "0" + "|";
-        s += "0" + "|";
+        s += "200" + "|";
         s += "0" + "|";
         s += "0" + "|";
         s += "0" + "|";
@@ -267,7 +275,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("SaveState");
         //reset stats
         currSkinID = 0;
-        pesos = 0;
+        pesos = 200;
         gems = 0;
         diamonds = 0;
         keys = 0;
@@ -279,9 +287,12 @@ public class GameManager : MonoBehaviour
         weapon.SetWeaponLevel(0);
         armor.SetArmorLevel(0);
 
+        player.Restart();
+        OnHitpointChange();
+        OnRagepointChange();
         deathMenuAnim.SetTrigger("Hide");
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
-        player.Restart();
+        
     }
 
 }

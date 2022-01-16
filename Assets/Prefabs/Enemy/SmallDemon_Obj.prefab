@@ -580,7 +580,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
+  damage: 3
   pushForce: 4
 --- !u!1 &7666409241178197655
 GameObject:
@@ -822,7 +822,7 @@ MonoBehaviour:
   ragepoints: 0
   maxRagepoint: 10
   armor: 0
-  movementSpeed: 100
+  movementSpeed: 135
   pushRecoverySpeed: 0.2
   bloodEffect: {fileID: 8392200424113513498, guid: 501f5d633cdd2411b99b25595614af3f, type: 3}
   ySpeed: 0.75

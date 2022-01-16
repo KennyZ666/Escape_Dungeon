@@ -196,8 +196,8 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
-  pushForce: 4
+  damage: 5
+  pushForce: 5
 --- !u!1 &8975474305596628462
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,17 +386,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e9969bdb17a49a0b2c8f7fc147c1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 10
-  maxHitpoint: 10
+  hitpoints: 20
+  maxHitpoint: 20
   ragepoints: 0
   maxRagepoint: 10
-  armor: 0
+  armor: 3
   movementSpeed: 100
   pushRecoverySpeed: 0.2
   bloodEffect: {fileID: 7415341225382280416, guid: 25d34481301e646d0afd1d60e20c3fa0, type: 3}
   ySpeed: 0.75
   xSpeed: 1
-  xpValue: 1
+  xpValue: 110
   triggerLength: 0.3
   chaseLength: 1
   movePos: {fileID: 8975474305015609014}

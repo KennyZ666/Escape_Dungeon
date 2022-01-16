@@ -136,7 +136,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
+  damage: 2
   pushForce: 2
 --- !u!1 &1771374799
 GameObject:
@@ -274,7 +274,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
+  damage: 2
   pushForce: 2
 --- !u!114 &561309886
 MonoBehaviour:
@@ -288,8 +288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a459fac8e25a404ab9fb3a29e207c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 10
-  maxHitpoint: 10
+  hitpoints: 15
+  maxHitpoint: 15
   ragepoints: 0
   maxRagepoint: 10
   armor: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
   bloodEffect: {fileID: 8392200424113513498, guid: 501f5d633cdd2411b99b25595614af3f, type: 3}
   ySpeed: 0.75
   xSpeed: 1
-  xpValue: 1
+  xpValue: 150
   triggerLength: 0.3
   chaseLength: 1
   movePos: {fileID: 1384940886502109427}

@@ -74,9 +74,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoints: 10
   maxHitpoint: 10
+  ragepoints: 0
+  maxRagepoint: 10
   armor: 1
   movementSpeed: 0
   pushRecoverySpeed: 0.2
+  bloodEffect: {fileID: 7415341225382280416, guid: 25d34481301e646d0afd1d60e20c3fa0, type: 3}
 --- !u!1 &679120731768651660
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +149,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1173516247
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 219433517873854331, guid: 9584ecb516cb54dd7b112e82a3c2fbfe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -228,7 +231,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1173516247
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 4596313960938759734, guid: 9584ecb516cb54dd7b112e82a3c2fbfe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
